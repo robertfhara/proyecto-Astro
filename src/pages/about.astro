@@ -12,13 +12,18 @@ const skills = ["HTML", "CSS", "JavaScript", "React", "Astro", "Redacción de do
 const happy = true;
 const finished = false;
 const goal = 3;
+
+const skillColor ="crimson";
+const fontWeight ="bold";
+const textCase ="uppercase";
+
 ---
 <html lang="es">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
     <title>{pageTitle}</title>
-    <style>
+    <style define:vars={{skillColor, fontWeight, textCase}}>
       a {
         display: flex;
         margin: 20px;
@@ -27,6 +32,12 @@ const goal = 3;
         font-family: sans-serif;
         font-size: 20px;
         font-weight: 400;
+      }
+
+      .skill {
+        color: var(--skillColor);
+        font-weight: var(--fontWeight);
+        text-transform: var(--textCase);
       }
     </style>
   </head>
@@ -51,7 +62,7 @@ const goal = 3;
     </ul>
     <p>Mis habilidades son:</p>
     <ul>
-    {skills.map((skill) => <li>{skill}</li>)}
+    {skills.map((skill) => <li class="skill">{skill}</li>)}
     </ul>
 
     {happy && <p>Estoy feliz de aprender Astro</p>}
