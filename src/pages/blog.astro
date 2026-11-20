@@ -1,11 +1,39 @@
+---
+const pageTitle = "Mi blog de Astro Aprendizaje"
+---
 
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>{pageTitle}</title>
+    <style>
+        body {
+            margin: 0;
+            text-align: center;
+            font-family: sans-serif;
+            background-color: azure;
+        }
+
+        a {
+            color: blue;
+            margin: auto;
+            font-size: 20px;
+        }
+        li {
+            margin-top: 30px;
+        }
+    </style>
 </head>
 <body>
+    <h1>{pageTitle}</h1>
+    <h2>Esta es la pagina de blog</h2>
+        <ul>
+      <li><a href="/posts/post-1/">Publicacion 1</a></li>
+      <li><a href="/posts/post-2/">Publicacion 2</a></li>
+      <li><a href="/posts/post-3/">Publicacion 3</a></li>
+    </ul>
+    
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet pariatur minus quisquam ipsum quae! Aspernatur natus saepe dicta a soluta molestias quia cumque eos facilis officia dolore, eveniet repellat vel.</p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum ipsum labore laudantium officia optio. Perferendis ducimus aspernatur, laudantium quia quidem obcaecati quasi pariatur impedit, doloremque ut libero eos culpa? Praesentium! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab, quas saepe. Molestias explicabo consectetur inventore illum. Voluptates, nemo inventore ullam, error ea veritatis quod nostrum, esse perspiciatis illum quas aperiam.
 </body>
 </html>

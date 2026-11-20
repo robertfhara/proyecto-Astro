@@ -1,18 +1,42 @@
-
+---
+const pageTitle = "Pagina de inicio"
+---
 <html lang="es">
   <head>
     <meta charset="utf-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} >
-    <title>Astro</title>
+    <title>{pageTitle}</title>
   </head>
   <body>
-    <h1>MI sitio Astro</h1>
+    <h1>{pageTitle}</h1>
 
     <a href="/">Inicio</a>
-    <a href="/chanse/">sobre mi</a>
-    <a href="/blog/"></a>
+    <a href="/about/">sobre mi</a>
+    <a href="/blog/">Blogs</a>
+
+    <style>
+      a {
+        display: flex;
+        color: blue;
+        margin: 12px;
+      }
+
+      body {
+        margin: 0;
+        background-color: #766AB0;
+      }
+
+      h1 {
+        text-align: center;
+        text-transform: uppercase;
+        font-family: sans-serif;
+        font-size: 30px;
+
+      }
+    </style>
+
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam veniam maiores odit mollitia modi unde numquam similique? Atque rem commodi totam aliquid, laboriosam deleniti corporis odit omnis esse blanditiis natus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet ut voluptas, ratione quos voluptatem quibusdam eum aut dolore quis voluptates perspiciatis ipsum quidem labore fugit voluptatibus est facere, animi recusandae?</p>
 
   </body>
