@@ -1,5 +1,7 @@
 ---
+import '../styles/global.css'
 const pageTitle = "Sobre mi";
+import Navigation from "../components/Navegation.astro"
 
 const identity = {
   firstName: "Roberto",
@@ -32,6 +34,7 @@ const textCase ="uppercase";
         font-family: sans-serif;
         font-size: 20px;
         font-weight: 400;
+        margin: 30px;
       }
 
       .skill {
@@ -40,19 +43,19 @@ const textCase ="uppercase";
         text-transform: var(--textCase);
       }
     </style>
+
   </head>
-  <body>
-    <a href="/">Inicio</a>
-    <a href="/about/">Sobre mi</a>
-    <a href="/blog/">Blog</a>
+    <body>
+      <Navigation/>
 
     <h1>{pageTitle}</h1>
     <h2>... ¡y mi nuevo sitio Astro!</h2>
-
+    <div class="lorem">
     <p>Estoy trabajando en el tutorial introductorio de Astro. Esta es la segunda página de mi sitio web, ¡y es la primera que he construido yo mismo!</p>
 
     <p>Este sitio se irá actualizando a medida que vaya completando más partes del tutorial, ¡así que no dejes de visitarlo para ver cómo va mi viaje!</p>
     <p>He aquí algunos datos sobre mí:</p>
+  </div>
   <ul>
   <li>Me llamo {identity.firstName}.</li>
   <li>Vivo en {identity.country} y trabajo como {identity.occupation}.</li>

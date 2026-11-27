@@ -1,5 +1,6 @@
 ---
 const pageTitle = "Pagina de inicio"
+import Navigation from "../components/Navegation.astro";
 ---
 <html lang="es">
   <head>
@@ -11,10 +12,7 @@ const pageTitle = "Pagina de inicio"
   </head>
   <body>
     <h1>{pageTitle}</h1>
-
-    <a href="/">Inicio</a>
-    <a href="/about/">sobre mi</a>
-    <a href="/blog/">Blogs</a>
+    <Navigation/>
 
     <style>
       a {
